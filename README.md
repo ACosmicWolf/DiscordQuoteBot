@@ -5,10 +5,11 @@
 `pycord`
 `discord`
 `requests`
+`python-dotenv`
 
 ## Can be installed using following commands
 
-`pip install discord pycord requests`
+`pip install discord pycord requests python-dotenv`
 
 ## Run the bot using
 
@@ -28,4 +29,4 @@ Replace CLIENT_ID with your client id
 
 # Note
 
-You need to add your token in main.py
+You need to add your token in .env
