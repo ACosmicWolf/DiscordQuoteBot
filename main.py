@@ -1,7 +1,12 @@
+from dotenv import load_dotenv
+import os
 import discord
 from discord.ext import commands
 import requests
 intents = discord.Intents.default()
+
+load_dotenv()
+
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
@@ -34,4 +39,6 @@ async def _joke(ctx):
     await ctx.respond(f"{setup} \n || {punchline} ||")
 
 
-bot.run('PLACE_YOUR_TOKEN_HERE')
+# bot.run(os.environ.get('TOKEN'))
+
+print(os.environ.get('TOKEN'))
